@@ -4,37 +4,29 @@ Python automation project that uses Selenium to extract structured records from 
 
 ## Overview
 
-This project was built to automate repetitive record lookups in a browser-based system. It reads IDs from an input CSV, navigates through a web interface, extracts structured contact information, and writes the results to an output CSV.
+This project automates repetitive record lookups in a browser-based system. It reads record IDs from an input CSV, navigates through a web interface, extracts structured contact information, and writes the results to an output CSV.
 
-The script demonstrates:
+This public version is intentionally sanitized:
+- no real credentials
+- no sensitive URLs
+- no private data
+- generic selectors and field names
 
-- Selenium browser automation
-- Dynamic page handling with explicit waits
-- Extraction from inconsistent page layouts
-- CSV input/output workflows
-- Basic error handling and fallback logic
+## Files in This Repo
 
-## Features
+- `extractor.py` - main Selenium automation script
+- `sample_input.csv` - example input file
+- `requirements.txt` - Python dependency list
 
-- Reads input records from CSV
-- Searches each record through a web interface
-- Extracts primary and secondary contact details
-- Handles alternate page layouts
-- Exports normalized results to CSV
-- Uses a pluggable authentication step
+## Setup
 
-## Tech Stack
+### 1. Install Python
+Make sure Python 3 is installed on your computer.
 
-- Python
-- Selenium
-- CSV module
-- Chrome WebDriver
+### 2. Install ChromeDriver
+Download ChromeDriver and note the path on your machine.
 
-## Project Structure
+### 3. Install the required package
 
-```text
-.
-├── extractor.py
-├── requirements.txt
-├── README.md
-└── sample_input.csv
+```bash
+pip install -r requirements.txt
